@@ -59,6 +59,8 @@ extension MenuViewController {
 // MARK: Actions
 
 extension MenuViewController {
+
+    @objc
 	func buttonWithImageOnScreenPressed(sender: AnyObject) {
 		let buttonSender = sender as? UIButton
 		

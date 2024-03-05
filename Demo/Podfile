@@ -1,12 +1,17 @@
-source 'https://github.com/CocoaPods/Specs.git'
+# Platform
+platform :ios, '14.0'
 
-# ignoring warning from pods
+# Source
+source 'https://cdn.cocoapods.org/'
+
+# Inhibit all warnings
 inhibit_all_warnings!
 
+# Use frameworks
+use_frameworks! :linkage => :static
+
 target "PhotoBrowserDemo" do
-
-pod 'SDWebImage'
-pod 'DACircularProgress'
-pod 'pop'
-
+  pod 'SDWebImage'
+  pod 'DACircularProgress'
+  pod 'pop'
 end
