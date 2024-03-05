@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.framework     =  'MessageUI', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'Security'
   s.requires_arc  =  true
   
-  s.dependency       'SDWebImage', ~> '5'
+  s.dependency       'SDWebImage', '~> 5.0'
   s.dependency       'DACircularProgress'
   s.dependency       'pop'
   end
