@@ -1,5 +1,5 @@
 # Platform
-platform :ios, '14.0'
+platform :ios, '15.0'
 
 # Source
 source 'https://cdn.cocoapods.org/'
@@ -13,5 +13,4 @@ use_frameworks! :linkage => :static
 target "PhotoBrowserDemo" do
   pod 'SDWebImage'
   pod 'DACircularProgress'
-  pod 'pop'
 end

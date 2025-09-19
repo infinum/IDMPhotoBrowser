@@ -17,6 +17,7 @@
 		0A97152D2B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715232B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png */; };
 		0A97152E2B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715242B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected.png */; };
 		0A97152F2B9733DE006B4720 /* IDMPhotoBrowser_customArrowRightSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715252B9733DE006B4720 /* IDMPhotoBrowser_customArrowRightSelected.png */; };
+		343C28C80F09D51F3DC2B688 /* Pods_PhotoBrowserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3CD09A855A8CCFC60F6E56 /* Pods_PhotoBrowserDemo.framework */; };
 		4C6F979214AF734900F8389A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F979114AF734900F8389A /* UIKit.framework */; };
 		4C6F979414AF734900F8389A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F979314AF734900F8389A /* Foundation.framework */; };
 		4C6F979614AF734900F8389A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F979514AF734900F8389A /* CoreGraphics.framework */; };
@@ -127,6 +128,7 @@
 		D1B43D541721875F00D8B807 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D1FA3A901805C340000FFE18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DEF1811E2E5676DB0ECAA3AE /* Pods-PhotoBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowserDemo/Pods-PhotoBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EC3CD09A855A8CCFC60F6E56 /* Pods_PhotoBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				4C6F979214AF734900F8389A /* UIKit.framework in Frameworks */,
 				4C6F979414AF734900F8389A /* Foundation.framework in Frameworks */,
 				4C6F979614AF734900F8389A /* CoreGraphics.framework in Frameworks */,
+				343C28C80F09D51F3DC2B688 /* Pods_PhotoBrowserDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +211,7 @@
 				D1FA3A901805C340000FFE18 /* Security.framework */,
 				D1A1935A1758F42300CE615F /* SystemConfiguration.framework */,
 				4C6F979114AF734900F8389A /* UIKit.framework */,
+				EC3CD09A855A8CCFC60F6E56 /* Pods_PhotoBrowserDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -367,6 +371,7 @@
 				en,
 				fr,
 				pt,
+				Base,
 			);
 			mainGroup = 4C6F978214AF734800F8389A;
 			productRefGroup = 4C6F978E14AF734900F8389A /* Products */;
@@ -590,6 +595,7 @@
 				GCC_PREFIX_HEADER = "PhotoBrowserDemo/PhotoBrowserDemo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "PhotoBrowserDemo/PhotoBrowserDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appkraft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,6 +619,7 @@
 				GCC_PREFIX_HEADER = "PhotoBrowserDemo/PhotoBrowserDemo-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "PhotoBrowserDemo/PhotoBrowserDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appkraft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,6 +659,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhotoBrowserDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appkraft.PhotoBrowserDemoTests;
@@ -692,6 +700,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PhotoBrowserDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appkraft.PhotoBrowserDemoTests;
