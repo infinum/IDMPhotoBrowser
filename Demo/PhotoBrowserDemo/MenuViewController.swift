@@ -101,9 +101,7 @@ extension MenuViewController {
 		// Create and setup browser
 		let browser: IDMPhotoBrowser = IDMPhotoBrowser(photos: photos, animatedFrom: buttonSender) // using initWithPhotos:animatedFromView:
 		browser.delegate = self
-		browser.displayActionButton = false
 		browser.displayArrowButton = true
-		browser.displayCounterLabel = true
 		browser.scaleImage = buttonSender?.currentImage
 		browser.dismissOnTouch = true
 		
@@ -229,11 +227,7 @@ extension MenuViewController {
 
 		if indexPath.section == 1 { // Multiple photos
 			if indexPath.row == 1 { // Photos from Flickr
-				browser?.displayCounterLabel = true
-				browser?.displayActionButton = false
 			} else if indexPath.row == 2 { // Photos from Flickr - Custom
-				browser?.actionButtonTitles      = ["Option 1", "Option 2", "Option 3", "Option 4"]
-				browser?.displayCounterLabel     = true
 				browser?.useWhiteBackgroundColor = true
 				browser?.leftArrowImage          = UIImage.init(named: "IDMPhotoBrowser_customArrowLeft.png")
 				browser?.rightArrowImage         = UIImage.init(named: "IDMPhotoBrowser_customArrowRight.png")
@@ -269,12 +263,5 @@ extension MenuViewController {
 	func photoBrowser(_ photoBrowser: IDMPhotoBrowser!, didDismissAtPageIndex index: UInt) {
 		let photo: IDMPhoto = photoBrowser.photo(at: index) as! IDMPhoto
 		print("Did dismiss photoBrowser with photo index: \(index), photo caption: \(photo.caption)")
-	}
-	
-	func photoBrowser(_ photoBrowser: IDMPhotoBrowser!, didDismissActionSheetWithButtonIndex buttonIndex: UInt, photoIndex: UInt) {
-		let photo: IDMPhoto = photoBrowser.photo(at: buttonIndex) as! IDMPhoto
-		print("Did dismiss photoBrowser with photo index: \(buttonIndex), photo caption: \(photo.caption)")
-		
-		UIAlertView(title: "Option \(buttonIndex+1)", message: nil, delegate: nil, cancelButtonTitle: "OK").show()
 	}
 }

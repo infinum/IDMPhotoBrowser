@@ -23,26 +23,21 @@
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didShowPhotoAtIndex:(NSUInteger)index;
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissAtPageIndex:(NSUInteger)index;
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser willDismissAtPageIndex:(NSUInteger)index;
-- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissActionSheetWithButtonIndex:(NSUInteger)buttonIndex photoIndex:(NSUInteger)photoIndex;
 - (IDMCaptionView *)photoBrowser:(IDMPhotoBrowser *)photoBrowser captionViewForPhotoAtIndex:(NSUInteger)index;
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser imageFailed:(NSUInteger)index imageView:(IDMTapDetectingImageView *)imageView;
 @end
 
 // IDMPhotoBrowser
-@interface IDMPhotoBrowser : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate>
+@interface IDMPhotoBrowser : UIViewController <UIScrollViewDelegate>
 
 // Properties
 @property (nonatomic, strong) id <IDMPhotoBrowserDelegate> delegate;
 
 // Toolbar customization
 @property (nonatomic) BOOL displayToolbar;
-@property (nonatomic) BOOL displayCounterLabel;
 @property (nonatomic) BOOL displayArrowButton;
-@property (nonatomic) BOOL displayActionButton;
-@property (nonatomic, strong) NSArray *actionButtonTitles;
 @property (nonatomic, weak) UIImage *leftArrowImage, *leftArrowSelectedImage;
 @property (nonatomic, weak) UIImage *rightArrowImage, *rightArrowSelectedImage;
-@property (nonatomic, weak) UIImage *actionButtonImage, *actionButtonSelectedImage;
 
 // View customization
 @property (nonatomic) BOOL displayDoneButton;

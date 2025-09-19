@@ -5,10 +5,13 @@ Pod::Spec.new do |s|
   s.homepage      =  "https://github.com/ideaismobile/IDMPhotoBrowser"
   s.license       =  { :type => 'MIT', :file => 'LICENSE.txt' }
   s.author        =  { "Eduardo Callado" => "eduardo_tasker@hotmail.com" }
-  s.source        =  { :git => "https://github.com/ideaismobile/IDMPhotoBrowser.git", :tag => "1.11.3" }
+  s.source        =  { :git => "https://github.com/infinum/IDMPhotoBrowser.git", :tag => "1.12.0" }
+  
   s.platform      =  :ios, '15.0'
-  s.source_files  =  'Classes/*.{h,m}'
-  s.resources     =  'Classes/IDMPhotoBrowser.bundle', 'Classes/IDMPBLocalizations.bundle'
+  
+  s.source_files  =  'Sources/*.{h,m}'
+  s.resources     =  'Resources/IDMPhotoBrowser.bundle'
+  
   s.framework     =  'MessageUI', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'Security'
   s.requires_arc  =  true
   
