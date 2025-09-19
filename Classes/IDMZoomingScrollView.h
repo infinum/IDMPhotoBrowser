@@ -6,12 +6,10 @@
 //  Copyright 2010 d3i. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "IDMPhotoProtocol.h"
 #import "IDMTapDetectingImageView.h"
 #import "IDMTapDetectingView.h"
-
-#import <DACircularProgress/DACircularProgressView.h>
 
 @class IDMPhotoBrowser, IDMPhoto, IDMCaptionView;
 
@@ -25,7 +23,7 @@
     
 	IDMTapDetectingView *_tapView; // for background taps
     
-    DACircularProgressView *_progressView;
+    UIActivityIndicatorView *_progressView;
 }
 
 @property (nonatomic, strong) IDMTapDetectingImageView *photoImageView;

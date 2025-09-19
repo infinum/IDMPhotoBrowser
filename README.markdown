@@ -177,7 +177,6 @@ Just add `pod 'IDMPhotoBrowser'` to your Podfile.
 #### Opensource libraries used
 
 - [SDWebImage](https://github.com/rs/SDWebImage)
-- [DACircularProgress](https://github.com/danielamitay/DACircularProgress)
 
 ## Licence
 

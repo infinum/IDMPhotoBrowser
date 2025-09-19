@@ -12,5 +12,4 @@ use_frameworks! :linkage => :static
 
 target "PhotoBrowserDemo" do
   pod 'SDWebImage'
-  pod 'DACircularProgress'
 end

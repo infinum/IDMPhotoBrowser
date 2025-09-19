@@ -1,22 +1,18 @@
 PODS:
-  - DACircularProgress (2.3.1)
   - SDWebImage (5.21.2):
     - SDWebImage/Core (= 5.21.2)
   - SDWebImage/Core (5.21.2)
 
 DEPENDENCIES:
-  - DACircularProgress
   - SDWebImage
 
 SPEC REPOS:
   trunk:
-    - DACircularProgress
     - SDWebImage
 
 SPEC CHECKSUMS:
-  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   SDWebImage: 9f177d83116802728e122410fb25ad88f5c7608a
 
-PODFILE CHECKSUM: 3ecc60c3f248b35cf58fc43f6a4d0ae7a90d529f
+PODFILE CHECKSUM: f50c51825767f4f9751054fbf8a2201cf6f3c235
 
 COCOAPODS: 1.16.2
