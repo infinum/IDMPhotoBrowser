@@ -152,10 +152,6 @@
 	}
 }
 
-- (void)setProgress:(CGFloat)progress forPhoto:(IDMPhoto*)photo {
-
-}
-
 // Image failed so just show black!
 - (void)displayImageFailure {
     [_progressView removeFromSuperview];

@@ -17,6 +17,14 @@
 		0A97152D2B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715232B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png */; };
 		0A97152E2B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715242B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected.png */; };
 		0A97152F2B9733DE006B4720 /* IDMPhotoBrowser_customArrowRightSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9715252B9733DE006B4720 /* IDMPhotoBrowser_customArrowRightSelected.png */; };
+		0ADF99172E7D2E7600ADC759 /* IDMPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF990C2E7D2E7600ADC759 /* IDMPhoto.m */; };
+		0ADF99182E7D2E7600ADC759 /* IDMCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF990B2E7D2E7600ADC759 /* IDMCaptionView.m */; };
+		0ADF99192E7D2E7600ADC759 /* IDMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF990D2E7D2E7600ADC759 /* IDMPhotoBrowser.m */; };
+		0ADF991A2E7D2E7600ADC759 /* IDMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF99122E7D2E7600ADC759 /* IDMUtils.m */; };
+		0ADF991B2E7D2E7600ADC759 /* IDMZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF99142E7D2E7600ADC759 /* IDMZoomingScrollView.m */; };
+		0ADF991C2E7D2E7600ADC759 /* IDMTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF99102E7D2E7600ADC759 /* IDMTapDetectingView.m */; };
+		0ADF991D2E7D2E7600ADC759 /* IDMTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF990E2E7D2E7600ADC759 /* IDMTapDetectingImageView.m */; };
+		0ADF991E2E7D2E7600ADC759 /* IDMPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0ADF99092E7D2E7600ADC759 /* IDMPhotoBrowser.bundle */; };
 		343C28C80F09D51F3DC2B688 /* Pods_PhotoBrowserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3CD09A855A8CCFC60F6E56 /* Pods_PhotoBrowserDemo.framework */; };
 		4C6F979214AF734900F8389A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F979114AF734900F8389A /* UIKit.framework */; };
 		4C6F979414AF734900F8389A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F979314AF734900F8389A /* Foundation.framework */; };
@@ -31,17 +39,9 @@
 		4C6F97D914AF760500F8389A /* photo4l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F97D114AF760500F8389A /* photo4l.jpg */; };
 		4C6F97DA14AF760500F8389A /* photo4m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F97D214AF760500F8389A /* photo4m.jpg */; };
 		727988B7187B3CF100966C66 /* IDMPhotoBrowser.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 727988B6187B3CF100966C66 /* IDMPhotoBrowser.podspec */; };
-		7D2B79B81FD2501300F2094F /* IDMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B79B71FD2501200F2094F /* IDMUtils.m */; };
 		7D2B79C01FD25B7600F2094F /* PhotoBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B79BF1FD25B7600F2094F /* PhotoBrowserDemoTests.m */; };
 		7D2B79C81FD25BF300F2094F /* IDMUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B79C71FD25BF300F2094F /* IDMUtilsTest.m */; };
 		D114BB411A32269C00E677FE /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D114BB401A32269C00E677FE /* Launch Screen.xib */; };
-		D1574968178DB94900B0211A /* IDMCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D157494F178DB94900B0211A /* IDMCaptionView.m */; };
-		D1574969178DB94900B0211A /* IDMPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D1574951178DB94900B0211A /* IDMPhoto.m */; };
-		D157496A178DB94900B0211A /* IDMPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1574952178DB94900B0211A /* IDMPhotoBrowser.bundle */; };
-		D157496B178DB94900B0211A /* IDMPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D1574954178DB94900B0211A /* IDMPhotoBrowser.m */; };
-		D157496C178DB94900B0211A /* IDMTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1574957178DB94900B0211A /* IDMTapDetectingImageView.m */; };
-		D157496D178DB94900B0211A /* IDMTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1574959178DB94900B0211A /* IDMTapDetectingView.m */; };
-		D157496E178DB94900B0211A /* IDMZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D157495B178DB94900B0211A /* IDMZoomingScrollView.m */; };
 		D1574971178DB95300B0211A /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = D157496F178DB95300B0211A /* README.markdown */; };
 		D1574972178DB95300B0211A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1574970178DB95300B0211A /* LICENSE.txt */; };
 		D17F79ED1AB7C29600A65B37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17F79EC1AB7C29600A65B37 /* Images.xcassets */; };
@@ -75,6 +75,23 @@
 		0A9715232B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IDMPhotoBrowser_customArrowLeftSelected@2x.png"; sourceTree = "<group>"; };
 		0A9715242B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDMPhotoBrowser_customArrowLeftSelected.png; sourceTree = "<group>"; };
 		0A9715252B9733DE006B4720 /* IDMPhotoBrowser_customArrowRightSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IDMPhotoBrowser_customArrowRightSelected.png; sourceTree = "<group>"; };
+		0ADF99022E7D2E7600ADC759 /* IDMCaptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMCaptionView.h; sourceTree = "<group>"; };
+		0ADF99032E7D2E7600ADC759 /* IDMPBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPBConstants.h; sourceTree = "<group>"; };
+		0ADF99042E7D2E7600ADC759 /* IDMPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPhoto.h; sourceTree = "<group>"; };
+		0ADF99052E7D2E7600ADC759 /* IDMPhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPhotoBrowser.h; sourceTree = "<group>"; };
+		0ADF99062E7D2E7600ADC759 /* IDMPhotoProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPhotoProtocol.h; sourceTree = "<group>"; };
+		0ADF99072E7D2E7600ADC759 /* IDMTapDetectingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingImageView.h; sourceTree = "<group>"; };
+		0ADF99092E7D2E7600ADC759 /* IDMPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IDMPhotoBrowser.bundle; sourceTree = "<group>"; };
+		0ADF990B2E7D2E7600ADC759 /* IDMCaptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMCaptionView.m; sourceTree = "<group>"; };
+		0ADF990C2E7D2E7600ADC759 /* IDMPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMPhoto.m; sourceTree = "<group>"; };
+		0ADF990D2E7D2E7600ADC759 /* IDMPhotoBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMPhotoBrowser.m; sourceTree = "<group>"; };
+		0ADF990E2E7D2E7600ADC759 /* IDMTapDetectingImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingImageView.m; sourceTree = "<group>"; };
+		0ADF990F2E7D2E7600ADC759 /* IDMTapDetectingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingView.h; sourceTree = "<group>"; };
+		0ADF99102E7D2E7600ADC759 /* IDMTapDetectingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingView.m; sourceTree = "<group>"; };
+		0ADF99112E7D2E7600ADC759 /* IDMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMUtils.h; sourceTree = "<group>"; };
+		0ADF99122E7D2E7600ADC759 /* IDMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMUtils.m; sourceTree = "<group>"; };
+		0ADF99132E7D2E7600ADC759 /* IDMZoomingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMZoomingScrollView.h; sourceTree = "<group>"; };
+		0ADF99142E7D2E7600ADC759 /* IDMZoomingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMZoomingScrollView.m; sourceTree = "<group>"; };
 		4C6F978D14AF734900F8389A /* PhotoBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6F979114AF734900F8389A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C6F979314AF734900F8389A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,29 +108,12 @@
 		4C6F97D114AF760500F8389A /* photo4l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo4l.jpg; path = Photos/photo4l.jpg; sourceTree = "<group>"; };
 		4C6F97D214AF760500F8389A /* photo4m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo4m.jpg; path = Photos/photo4m.jpg; sourceTree = "<group>"; };
 		727988B6187B3CF100966C66 /* IDMPhotoBrowser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IDMPhotoBrowser.podspec; path = ../../IDMPhotoBrowser.podspec; sourceTree = "<group>"; };
-		7D2B79B61FD2501200F2094F /* IDMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMUtils.h; sourceTree = "<group>"; };
-		7D2B79B71FD2501200F2094F /* IDMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMUtils.m; sourceTree = "<group>"; };
 		7D2B79BD1FD25B7600F2094F /* PhotoBrowserDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBrowserDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2B79BF1FD25B7600F2094F /* PhotoBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserDemoTests.m; sourceTree = "<group>"; };
 		7D2B79C11FD25B7600F2094F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D2B79C71FD25BF300F2094F /* IDMUtilsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDMUtilsTest.m; sourceTree = "<group>"; };
 		D00FA320EEACA8C835D9D626 /* Pods-PhotoBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowserDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowserDemo/Pods-PhotoBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D11464B61802FFC4005B7BC3 /* IDMPBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDMPBConstants.h; sourceTree = "<group>"; };
 		D114BB401A32269C00E677FE /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		D157494E178DB94900B0211A /* IDMCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMCaptionView.h; sourceTree = "<group>"; };
-		D157494F178DB94900B0211A /* IDMCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMCaptionView.m; sourceTree = "<group>"; };
-		D1574950178DB94900B0211A /* IDMPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhoto.h; sourceTree = "<group>"; };
-		D1574951178DB94900B0211A /* IDMPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPhoto.m; sourceTree = "<group>"; };
-		D1574952178DB94900B0211A /* IDMPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = IDMPhotoBrowser.bundle; path = ../Resources/IDMPhotoBrowser.bundle; sourceTree = "<group>"; };
-		D1574953178DB94900B0211A /* IDMPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhotoBrowser.h; sourceTree = "<group>"; };
-		D1574954178DB94900B0211A /* IDMPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMPhotoBrowser.m; sourceTree = "<group>"; };
-		D1574955178DB94900B0211A /* IDMPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMPhotoProtocol.h; sourceTree = "<group>"; };
-		D1574956178DB94900B0211A /* IDMTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingImageView.h; sourceTree = "<group>"; };
-		D1574957178DB94900B0211A /* IDMTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingImageView.m; sourceTree = "<group>"; };
-		D1574958178DB94900B0211A /* IDMTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMTapDetectingView.h; sourceTree = "<group>"; };
-		D1574959178DB94900B0211A /* IDMTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMTapDetectingView.m; sourceTree = "<group>"; };
-		D157495A178DB94900B0211A /* IDMZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMZoomingScrollView.h; sourceTree = "<group>"; };
-		D157495B178DB94900B0211A /* IDMZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDMZoomingScrollView.m; sourceTree = "<group>"; };
 		D157496F178DB95300B0211A /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../../README.markdown; sourceTree = "<group>"; };
 		D1574970178DB95300B0211A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = ../../LICENSE.txt; sourceTree = "<group>"; };
 		D17F79EC1AB7C29600A65B37 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -174,10 +174,59 @@
 			path = "Custom Images";
 			sourceTree = "<group>";
 		};
+		0ADF99082E7D2E7600ADC759 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF99022E7D2E7600ADC759 /* IDMCaptionView.h */,
+				0ADF99032E7D2E7600ADC759 /* IDMPBConstants.h */,
+				0ADF99042E7D2E7600ADC759 /* IDMPhoto.h */,
+				0ADF99052E7D2E7600ADC759 /* IDMPhotoBrowser.h */,
+				0ADF99062E7D2E7600ADC759 /* IDMPhotoProtocol.h */,
+				0ADF99072E7D2E7600ADC759 /* IDMTapDetectingImageView.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0ADF990A2E7D2E7600ADC759 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF99092E7D2E7600ADC759 /* IDMPhotoBrowser.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0ADF99152E7D2E7600ADC759 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF990B2E7D2E7600ADC759 /* IDMCaptionView.m */,
+				0ADF990C2E7D2E7600ADC759 /* IDMPhoto.m */,
+				0ADF990D2E7D2E7600ADC759 /* IDMPhotoBrowser.m */,
+				0ADF990E2E7D2E7600ADC759 /* IDMTapDetectingImageView.m */,
+				0ADF990F2E7D2E7600ADC759 /* IDMTapDetectingView.h */,
+				0ADF99102E7D2E7600ADC759 /* IDMTapDetectingView.m */,
+				0ADF99112E7D2E7600ADC759 /* IDMUtils.h */,
+				0ADF99122E7D2E7600ADC759 /* IDMUtils.m */,
+				0ADF99132E7D2E7600ADC759 /* IDMZoomingScrollView.h */,
+				0ADF99142E7D2E7600ADC759 /* IDMZoomingScrollView.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0ADF99162E7D2E7600ADC759 /* IDMPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF99082E7D2E7600ADC759 /* include */,
+				0ADF990A2E7D2E7600ADC759 /* Resources */,
+				0ADF99152E7D2E7600ADC759 /* Sources */,
+			);
+			name = IDMPhotoBrowser;
+			path = ../IDMPhotoBrowser;
+			sourceTree = SOURCE_ROOT;
+		};
 		4C6F978214AF734800F8389A = {
 			isa = PBXGroup;
 			children = (
-				D1574931178DB94900B0211A /* IDMPhotoBrowser */,
+				0ADF99162E7D2E7600ADC759 /* IDMPhotoBrowser */,
 				4C6F979714AF734900F8389A /* Demo */,
 				4C6F97CA14AF75D300F8389A /* Sample Photos */,
 				4C6F979814AF734900F8389A /* Supporting Files */,
@@ -274,31 +323,6 @@
 				7D2B79C11FD25B7600F2094F /* Info.plist */,
 			);
 			path = PhotoBrowserDemoTests;
-			sourceTree = "<group>";
-		};
-		D1574931178DB94900B0211A /* IDMPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				D157494E178DB94900B0211A /* IDMCaptionView.h */,
-				D157494F178DB94900B0211A /* IDMCaptionView.m */,
-				D11464B61802FFC4005B7BC3 /* IDMPBConstants.h */,
-				D1574950178DB94900B0211A /* IDMPhoto.h */,
-				D1574951178DB94900B0211A /* IDMPhoto.m */,
-				D1574953178DB94900B0211A /* IDMPhotoBrowser.h */,
-				D1574954178DB94900B0211A /* IDMPhotoBrowser.m */,
-				7D2B79B61FD2501200F2094F /* IDMUtils.h */,
-				7D2B79B71FD2501200F2094F /* IDMUtils.m */,
-				D1574955178DB94900B0211A /* IDMPhotoProtocol.h */,
-				D1574956178DB94900B0211A /* IDMTapDetectingImageView.h */,
-				D1574957178DB94900B0211A /* IDMTapDetectingImageView.m */,
-				D1574958178DB94900B0211A /* IDMTapDetectingView.h */,
-				D1574959178DB94900B0211A /* IDMTapDetectingView.m */,
-				D157495A178DB94900B0211A /* IDMZoomingScrollView.h */,
-				D157495B178DB94900B0211A /* IDMZoomingScrollView.m */,
-				D1574952178DB94900B0211A /* IDMPhotoBrowser.bundle */,
-			);
-			name = IDMPhotoBrowser;
-			path = ../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,9 +424,9 @@
 				4C6F97D814AF760500F8389A /* photo3m.jpg in Resources */,
 				4C6F97D914AF760500F8389A /* photo4l.jpg in Resources */,
 				0A97152D2B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeftSelected@2x.png in Resources */,
+				0ADF991E2E7D2E7600ADC759 /* IDMPhotoBrowser.bundle in Resources */,
 				0A97152B2B9733DE006B4720 /* IDMPhotoBrowser_customArrowRight@2x.png in Resources */,
 				4C6F97DA14AF760500F8389A /* photo4m.jpg in Resources */,
-				D157496A178DB94900B0211A /* IDMPhotoBrowser.bundle in Resources */,
 				0A9715292B9733DE006B4720 /* IDMPhotoBrowser_customArrowLeft.png in Resources */,
 				D1574971178DB95300B0211A /* README.markdown in Resources */,
 				D1574972178DB95300B0211A /* LICENSE.txt in Resources */,
@@ -466,15 +490,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2B79B81FD2501300F2094F /* IDMUtils.m in Sources */,
-				D1574968178DB94900B0211A /* IDMCaptionView.m in Sources */,
 				D1A9ED541DEB685F00C238DA /* MenuViewController.swift in Sources */,
-				D1574969178DB94900B0211A /* IDMPhoto.m in Sources */,
-				D157496B178DB94900B0211A /* IDMPhotoBrowser.m in Sources */,
-				D157496C178DB94900B0211A /* IDMTapDetectingImageView.m in Sources */,
-				D157496D178DB94900B0211A /* IDMTapDetectingView.m in Sources */,
+				0ADF99172E7D2E7600ADC759 /* IDMPhoto.m in Sources */,
+				0ADF99182E7D2E7600ADC759 /* IDMCaptionView.m in Sources */,
+				0ADF99192E7D2E7600ADC759 /* IDMPhotoBrowser.m in Sources */,
+				0ADF991A2E7D2E7600ADC759 /* IDMUtils.m in Sources */,
+				0ADF991B2E7D2E7600ADC759 /* IDMZoomingScrollView.m in Sources */,
+				0ADF991C2E7D2E7600ADC759 /* IDMTapDetectingView.m in Sources */,
+				0ADF991D2E7D2E7600ADC759 /* IDMTapDetectingImageView.m in Sources */,
 				D1A9ED521DEB684B00C238DA /* AppDelegate.swift in Sources */,
-				D157496E178DB94900B0211A /* IDMZoomingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

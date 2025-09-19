@@ -19,7 +19,9 @@ let package = Package(
         .target(
             name: "IDMPhotoBrowser",
             dependencies: ["SDWebImage"],
-            path: "Classes"
+            path: "IDMPhotoBrowser",
+            sources: ["Sources"],
+            resources: [.copy("Resources/IDMPhotoBrowser.bundle")]
         )
     ]
 )

@@ -588,6 +588,10 @@
     [_toolbar setBackgroundImage:[UIImage new]
               forToolbarPosition:UIToolbarPositionAny
                       barMetrics:UIBarMetricsDefault];
+    UIToolbarAppearance *appearance = [UIToolbarAppearance new];
+    [appearance configureWithTransparentBackground];
+    appearance.backgroundColor = UIColor.clearColor;
+    _toolbar.standardAppearance = appearance;
 
     // Close Button
     _doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -610,17 +614,32 @@
         _doneButton.contentMode = UIViewContentModeScaleAspectFit;
     }
 
-    UIImage *leftButtonImage = (_leftArrowImage == nil) ?
-    [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft.png"]          : _leftArrowImage;
+    NSBundle *imagesBundle;
+#if defined(SWIFTPM_MODULE_BUNDLE)
+    imagesBundle = SWIFTPM_MODULE_BUNDLE;
+#else
+    imagesBundle = [NSBundle mainBundle];
+#endif
 
-    UIImage *rightButtonImage = (_rightArrowImage == nil) ?
-    [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight.png"]         : _rightArrowImage;
+    UIImage *leftButtonImage = (_leftArrowImage == nil) ? [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft.png"
+                                                                     inBundle:imagesBundle
+                                                            withConfiguration:nil]
+                                                        : _leftArrowImage;
 
-    UIImage *leftButtonSelectedImage = (_leftArrowSelectedImage == nil) ?
-    [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeftSelected.png"]  : _leftArrowSelectedImage;
+    UIImage *rightButtonImage = (_rightArrowImage == nil) ? [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight.png"
+                                                                       inBundle:imagesBundle
+                                                              withConfiguration:nil]
+                                                          : _rightArrowImage;
 
-    UIImage *rightButtonSelectedImage = (_rightArrowSelectedImage == nil) ?
-    [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRightSelected.png"] : _rightArrowSelectedImage;
+    UIImage *leftButtonSelectedImage = (_leftArrowSelectedImage == nil) ? [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeftSelected.png"
+                                                                                     inBundle:imagesBundle
+                                                                            withConfiguration:nil]
+                                                                        : _leftArrowSelectedImage;
+
+    UIImage *rightButtonSelectedImage = (_rightArrowSelectedImage == nil) ? [UIImage imageNamed:@"IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRightSelected.png"
+                                                                                       inBundle:imagesBundle
+                                                                              withConfiguration:nil]
+                                                                          : _rightArrowSelectedImage;
 
     // Arrows
     _previousButton = [[UIBarButtonItem alloc] initWithCustomView:[self customToolbarButtonImage:leftButtonImage
@@ -987,12 +1006,6 @@
 	page.frame = [self frameForPageAtIndex:index];
     page.tag = PAGE_INDEX_TAG_OFFSET + index;
     page.photo = [self photoAtIndex:index];
-
-    __block __weak IDMPhoto *photo = (IDMPhoto*)page.photo;
-    __weak IDMZoomingScrollView* weakPage = page;
-    photo.progressUpdateBlock = ^(CGFloat progress){
-        [weakPage setProgress:progress forPhoto:photo];
-    };
 }
 
 - (IDMZoomingScrollView *)dequeueRecycledPage {

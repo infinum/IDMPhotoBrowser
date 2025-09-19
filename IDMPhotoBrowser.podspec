@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   
   s.platform      =  :ios, '15.0'
   
-  s.source_files  =  'Sources/*.{h,m}'
-  s.resources     =  'Resources/IDMPhotoBrowser.bundle'
+  s.source_files  =  'IDMPhotoBrowser/*.{h,m}'
+  s.resources     =  'IDMPhotoBrowser/Resources/IDMPhotoBrowser.bundle'
   
   s.framework     =  'MessageUI', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'Security'
   s.requires_arc  =  true
